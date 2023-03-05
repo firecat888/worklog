@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Logs</title>
+  </head>
+  <body>
+    <h1>Logs</h1>
+    <ul>
+      {% for log in logs %}
+        <li><a href="{{ url_for('log', id=log.id) }}">{{ log.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <p><a href="{{ url_for('create') }}">Create a new log</a></p>
+  </body>
+</html>
+

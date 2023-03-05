@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ log.title }}</title>
+  </head>
+  <body>
+    <h1>{{ log.title }}</h1>
+    <p>{{ log.content }}</p>
+    <p>Created at {{ log.created_at }}</p>
+    <p><a href="{{ url_for('logs') }}">Back to logs</a></p>
+  </body>
+</html>
+
